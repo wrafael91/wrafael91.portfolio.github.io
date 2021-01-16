@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="script.js"></script><!-- Javascript File -->
+    <link rel="stylesheet" href="style.css">
+    <title>WRMP | Web Development</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">WRMP</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About Me</a></li>
+            <li><a href="#services" onclick="toggleMenu();">Services</a></li>
+            <li><a href="#work" onclick="toggleMenu();">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="banner" id="home">
+        <div class="textbox">
+            <h2>Hi! I'm<br><span>William Manchabajoy</span></h2>
+            <h3>I'm a Front-End Web Developer</h3>
+            <a href="#about" class="btn">Know More</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+        </div>
+        <div class="content">
+            <div class="content-box w50">
+                <h3>Looking for new challenges</h3>
+                <p>My name is William Manchabajoy, I'm 30 years old, I was born in Cali, Colombia.
+                    I like to read and to do some sport. I'm getting started on web development, although,
+                    I've spent some years in university studying engineering, but it really helped me 
+                    to realize the amazing opportunity both technology and software development is about. 
+                    That's the reason why I signed up in a bootcamp in <span><a href="https://www.makeitreal.camp">'Make It Real'</a></span>, a startup company in 
+                    which I've learned programming languages like HTML, CSS and Javascript, among others.
+                    <br><br>
+                    I like the most to discover new things and solving out problems, therefore, by doing
+                    coding and interacting on different technologies I've a got a better understanding
+                    on how things are going on each day and what is the role we play and what is society demanding on
+                    current time. 
+                    </p>
+            </div>
+            <div class="w50">
+                <img src="harrison-moore-pNuBdhn8vKU-unsplash.jpg" class="img">
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="heading white">
+            <h2>Services</h2>
+        </div>
+        <div class="content">
+            <div class="services-box">
+              <img src="website.png">
+              <h2>Web Design</h2>
+              <p>Make your business look great with custom and responsive designs on all devices.</p>
+            </div>
+            <div class="services-box">
+              <img src="social-media.png">
+              <h2>Digital Marketing</h2>
+              <p>Set up the estrategy to increase your sales and customers on social media network.</p>
+            </div>
+            <div class="services-box">
+              <img src="copywriting.png">
+              <h2>Content Writing</h2>
+              <p>Provide accurate information on your products by writing articles to get more leads.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="work" id="work">
+        <div class="heading">
+            <h2>Projects</h2>
+            <p>Check out some of the projects I've worked on.</p>
+        </div>
+        <div class="content">
+            <div class="work-box">
+                <img src="cyc.jpg">
+            </div>
+        </div>
+        <div class="heading">
+            <a href="https://www.cocinasyclosets.co" class="btn">View More</a>
+        </div>
+    </section>
+
+    <section class="testimonial">
+        <div class="heading">
+            <h2>Testimonial</h2>
+            <p>Let the customers give you their feedback about our work.</p>
+        </div>
+        <div class="content">
+            <div class="testimonial-box">
+                <p>Since I have my business online, my sales have increased by 40%. My customers are closer than ever and I can interact with them more effectively.</p>
+                <h3>Eliel M. Martinez<br><span>CEO<br> CYC-Melamínicos</span></h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <h2>Contact Us</h2>
+            <p>We'll get in touch with you as soon as possible.</p>
+        </div>
+        <div class="content">
+            <div class="social-media">  
+                <h3>Social Media</h3>
+                <div class="scm-box">
+                    <div class="box">
+                        <div class="icon"><a href="https://www.facebook.com/william.manchabajoy"><img src="facebook.png"></a></div>
+                        <div class="text">
+                            <h4><a href="https://www.facebook.com/william.manchabajoy">Facebook</a></h4>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><a href="https://www.instagram.com/wrafael_mp/"><img src="instagram.png"></a></div>
+                        <div class="text">
+                            <h4><a href="https://www.instagram.com/wrafael_mp/">Instagram</a></h4>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><a href="https://www.linkedin.com/in/rafael-manchabajoy-5195671b8/"><img src="linkedin.png"></a></div>
+                        <div class="text">
+                            <h4><a href="https://www.linkedin.com/in/rafael-manchabajoy-5195671b8/">Linkedin</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-box">
+                <form action="https://formspree.io/f/xjvpjqzo" method="POST" id="my-form">
+                    <input type="text" name="fullName" placeholder="Full name">
+                    <input type="email" name="email" placeholder="Email">
+                    <textarea name="message" placeholder="Your message"></textarea>
+                    <input type="submit" value="Send">
+                    
+                </form>
+                <div id="status"></div>
+            </div>
+            
+        </div>
+    </section>
+
+    <div class="copyright">
+        <p>Copyright © 2021. All Rights Reserved.</p>
+    </div>
+</body>
+</html>
